@@ -9,15 +9,16 @@
 #import "ZFProgressBar.h"
 
 @interface ZFProgressBarActiveBackground : UIView
-
+@property (nonatomic, strong) UIColor *tintColor;
 @end
 
 @interface ZFProgressBarBackground : UIView
-
+@property (nonatomic, strong) UIColor *tintColor;
 @end
 
 @interface ZFProgressBar ()
 @property (nonatomic, strong) ZFProgressBarActiveBackground *activeBar;
+@property (nonatomic, strong) ZFProgressBarBackground *barBackground;
 @end
 
 @implementation ZFProgressBar
@@ -36,13 +37,21 @@
 }
 
 -(void)setUp{
-    ZFProgressBarBackground *barBackground = [[ZFProgressBarBackground alloc] initWithFrame:self.bounds];
-    barBackground.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    [self addSubview:barBackground];
+    _barBackground = [[ZFProgressBarBackground alloc] initWithFrame:self.bounds];
+    _barBackground.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [self addSubview:_barBackground];
     
     self.activeBar = [[ZFProgressBarActiveBackground alloc] initWithFrame:self.bounds];
     _activeBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin;
     [self addSubview:_activeBar];
+}
+
+-(void)setTintColor:(UIColor *)tintColor {
+    _tintColor = tintColor;
+    [_barBackground setTintColor:_tintColor];
+    [_barBackground setNeedsDisplay];
+    [_activeBar setTintColor:_tintColor];
+    [_activeBar setNeedsDisplay];
 }
 
 -(void)setProgress:(float)progress{
@@ -75,6 +84,7 @@
     if (self) {
         // Initialization code
         [self setBackgroundColor:[UIColor clearColor]];
+        _tintColor = [UIColor colorWithRed: 0.333 green: 0.333 blue: 0.333 alpha: 1];
     }
     return self;
 }
@@ -85,7 +95,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     //// Color Declarations
-    UIColor* barColor = [UIColor colorWithRed: 0.333 green: 0.333 blue: 0.333 alpha: 1];
+    UIColor* barColor = _tintColor;
     UIColor* barShadowColor = [UIColor colorWithRed: 0.667 green: 0.667 blue: 0.667 alpha: 1];
     
     //// Shadow Declarations
@@ -128,7 +138,6 @@
     [self setNeedsDisplayInRect:self.frame];
 }
 
-
 @end
 
 
@@ -141,6 +150,7 @@
     if (self) {
         // Initialization code
         [self setBackgroundColor:[UIColor clearColor]];
+        _tintColor = [UIColor colorWithRed: 0.806 green: 0.806 blue: 0.806 alpha: 1];
     }
     return self;
 }
@@ -148,7 +158,7 @@
 -(void)drawRect:(CGRect)rect{
     
     //// Color Declarations
-    UIColor* barBackgroundColor = [UIColor colorWithRed: 0.806 green: 0.806 blue: 0.806 alpha: 1];
+    UIColor* barBackgroundColor = [_tintColor colorWithAlphaComponent:0.1];
     
     //// Frames
     CGRect progressBarFrame = rect;//CGRectMake(43, 50, 86, 19);

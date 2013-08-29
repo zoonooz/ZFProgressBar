@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -13,21 +13,39 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="WN3-FH-0n0" customClass="ZFProgressBar">
-                                <rect key="frame" x="33" y="225" width="254" height="98"/>
+                                <rect key="frame" x="33" y="225" width="77" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96200856850000005" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="JxP-qc-mXb" customClass="ZFProgressBar">
+                                <rect key="frame" x="33" y="235" width="77" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="6zd-t3-Pgg" customClass="ZFProgressBar">
+                                <rect key="frame" x="33" y="245" width="77" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Emj-Lg-Pjj">
-                                <rect key="frame" x="101" y="172" width="118" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="135" y="320" width="118" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="valueChanged:" destination="2" eventType="valueChanged" id="jgl-dQ-23n"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" id="5jK-oi-VsW" customClass="ZFProgressBar">
+                                <rect key="frame" x="33" y="255" width="77" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="bar2" destination="JxP-qc-mXb" id="vDg-oP-X4g"/>
+                        <outlet property="bar3" destination="6zd-t3-Pgg" id="YbM-VU-1TE"/>
+                        <outlet property="bar4" destination="5jK-oi-VsW" id="coH-Mm-iYq"/>
                         <outlet property="progressBar" destination="WN3-FH-0n0" id="fgu-Ju-HCo"/>
                         <outlet property="slider" destination="Emj-Lg-Pjj" id="fPc-n4-tKo"/>
                     </connections>
@@ -36,19 +54,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="ZFProgressBar" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZFProgressBar.h"/>
-        </class>
-        <class className="ZFViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZFViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="valueChanged:" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="progressBar" candidateClass="ZFProgressBar"/>
-                <relationship kind="outlet" name="slider" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

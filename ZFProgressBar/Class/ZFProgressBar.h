@@ -11,5 +11,6 @@
 @interface ZFProgressBar : UIView
 
 @property (nonatomic) float progress;
+@property (nonatomic, strong) UIColor *tintColor;
 
 @end

@@ -12,5 +12,8 @@
 @interface ZFViewController : UIViewController
 @property (weak, nonatomic) IBOutlet ZFProgressBar *progressBar;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (weak, nonatomic) IBOutlet ZFProgressBar *bar2;
+@property (weak, nonatomic) IBOutlet ZFProgressBar *bar3;
+@property (weak, nonatomic) IBOutlet ZFProgressBar *bar4;
 
 @end
