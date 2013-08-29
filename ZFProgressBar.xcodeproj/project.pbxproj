@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E756A78E17CC6095008709A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E756A78D17CC6095008709A5 /* UIKit.framework */; };
+		E756A79017CC6095008709A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E756A78F17CC6095008709A5 /* Foundation.framework */; };
+		E756A79217CC6095008709A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E756A79117CC6095008709A5 /* CoreGraphics.framework */; };
+		E756A79817CC6095008709A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E756A79617CC6095008709A5 /* InfoPlist.strings */; };
+		E756A79A17CC6095008709A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E756A79917CC6095008709A5 /* main.m */; };
+		E756A79E17CC6095008709A5 /* ZFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E756A79D17CC6095008709A5 /* ZFAppDelegate.m */; };
+		E756A7A017CC6095008709A5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E756A79F17CC6095008709A5 /* Default.png */; };
+		E756A7A217CC6095008709A5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E756A7A117CC6095008709A5 /* Default@2x.png */; };
+		E756A7A417CC6095008709A5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E756A7A317CC6095008709A5 /* Default-568h@2x.png */; };
+		E756A7A717CC6095008709A5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E756A7A517CC6095008709A5 /* MainStoryboard.storyboard */; };
+		E756A7AA17CC6095008709A5 /* ZFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E756A7A917CC6095008709A5 /* ZFViewController.m */; };
+		E756A7B417CC60E9008709A5 /* ZFProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E756A7B317CC60E9008709A5 /* ZFProgressBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E756A78A17CC6095008709A5 /* ZFProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E756A78D17CC6095008709A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E756A78F17CC6095008709A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E756A79117CC6095008709A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E756A79517CC6095008709A5 /* ZFProgressBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZFProgressBar-Info.plist"; sourceTree = "<group>"; };
+		E756A79717CC6095008709A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E756A79917CC6095008709A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E756A79B17CC6095008709A5 /* ZFProgressBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZFProgressBar-Prefix.pch"; sourceTree = "<group>"; };
+		E756A79C17CC6095008709A5 /* ZFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFAppDelegate.h; sourceTree = "<group>"; };
+		E756A79D17CC6095008709A5 /* ZFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFAppDelegate.m; sourceTree = "<group>"; };
+		E756A79F17CC6095008709A5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E756A7A117CC6095008709A5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E756A7A317CC6095008709A5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E756A7A617CC6095008709A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E756A7A817CC6095008709A5 /* ZFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFViewController.h; sourceTree = "<group>"; };
+		E756A7A917CC6095008709A5 /* ZFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFViewController.m; sourceTree = "<group>"; };
+		E756A7B217CC60E9008709A5 /* ZFProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFProgressBar.h; sourceTree = "<group>"; };
+		E756A7B317CC60E9008709A5 /* ZFProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFProgressBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E756A78717CC6095008709A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E756A78E17CC6095008709A5 /* UIKit.framework in Frameworks */,
+				E756A79017CC6095008709A5 /* Foundation.framework in Frameworks */,
+				E756A79217CC6095008709A5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E756A78117CC6095008709A5 = {
+			isa = PBXGroup;
+			children = (
+				E756A79317CC6095008709A5 /* ZFProgressBar */,
+				E756A78C17CC6095008709A5 /* Frameworks */,
+				E756A78B17CC6095008709A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E756A78B17CC6095008709A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E756A78A17CC6095008709A5 /* ZFProgressBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E756A78C17CC6095008709A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E756A78D17CC6095008709A5 /* UIKit.framework */,
+				E756A78F17CC6095008709A5 /* Foundation.framework */,
+				E756A79117CC6095008709A5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E756A79317CC6095008709A5 /* ZFProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				E756A7B117CC60BD008709A5 /* Class */,
+				E756A79C17CC6095008709A5 /* ZFAppDelegate.h */,
+				E756A79D17CC6095008709A5 /* ZFAppDelegate.m */,
+				E756A7A517CC6095008709A5 /* MainStoryboard.storyboard */,
+				E756A7A817CC6095008709A5 /* ZFViewController.h */,
+				E756A7A917CC6095008709A5 /* ZFViewController.m */,
+				E756A79417CC6095008709A5 /* Supporting Files */,
+			);
+			path = ZFProgressBar;
+			sourceTree = "<group>";
+		};
+		E756A79417CC6095008709A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E756A79517CC6095008709A5 /* ZFProgressBar-Info.plist */,
+				E756A79617CC6095008709A5 /* InfoPlist.strings */,
+				E756A79917CC6095008709A5 /* main.m */,
+				E756A79B17CC6095008709A5 /* ZFProgressBar-Prefix.pch */,
+				E756A79F17CC6095008709A5 /* Default.png */,
+				E756A7A117CC6095008709A5 /* Default@2x.png */,
+				E756A7A317CC6095008709A5 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E756A7B117CC60BD008709A5 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E756A7B217CC60E9008709A5 /* ZFProgressBar.h */,
+				E756A7B317CC60E9008709A5 /* ZFProgressBar.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E756A78917CC6095008709A5 /* ZFProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E756A7AD17CC6095008709A5 /* Build configuration list for PBXNativeTarget "ZFProgressBar" */;
+			buildPhases = (
+				E756A78617CC6095008709A5 /* Sources */,
+				E756A78717CC6095008709A5 /* Frameworks */,
+				E756A78817CC6095008709A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZFProgressBar;
+			productName = ZFProgressBar;
+			productReference = E756A78A17CC6095008709A5 /* ZFProgressBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E756A78217CC6095008709A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZF;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = zoonref;
+			};
+			buildConfigurationList = E756A78517CC6095008709A5 /* Build configuration list for PBXProject "ZFProgressBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E756A78117CC6095008709A5;
+			productRefGroup = E756A78B17CC6095008709A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E756A78917CC6095008709A5 /* ZFProgressBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E756A78817CC6095008709A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E756A79817CC6095008709A5 /* InfoPlist.strings in Resources */,
+				E756A7A017CC6095008709A5 /* Default.png in Resources */,
+				E756A7A217CC6095008709A5 /* Default@2x.png in Resources */,
+				E756A7A417CC6095008709A5 /* Default-568h@2x.png in Resources */,
+				E756A7A717CC6095008709A5 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E756A78617CC6095008709A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E756A79A17CC6095008709A5 /* main.m in Sources */,
+				E756A79E17CC6095008709A5 /* ZFAppDelegate.m in Sources */,
+				E756A7AA17CC6095008709A5 /* ZFViewController.m in Sources */,
+				E756A7B417CC60E9008709A5 /* ZFProgressBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E756A79617CC6095008709A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E756A79717CC6095008709A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E756A7A517CC6095008709A5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E756A7A617CC6095008709A5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E756A7AB17CC6095008709A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E756A7AC17CC6095008709A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E756A7AE17CC6095008709A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZFProgressBar/ZFProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "ZFProgressBar/ZFProgressBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E756A7AF17CC6095008709A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZFProgressBar/ZFProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "ZFProgressBar/ZFProgressBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E756A78517CC6095008709A5 /* Build configuration list for PBXProject "ZFProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E756A7AB17CC6095008709A5 /* Debug */,
+				E756A7AC17CC6095008709A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E756A7AD17CC6095008709A5 /* Build configuration list for PBXNativeTarget "ZFProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E756A7AE17CC6095008709A5 /* Debug */,
+				E756A7AF17CC6095008709A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E756A78217CC6095008709A5 /* Project object */;
+}
